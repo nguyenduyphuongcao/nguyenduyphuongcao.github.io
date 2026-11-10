@@ -4,138 +4,140 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Phuong Cao</title>
-<meta name="description" content="Cao Nguyen Duy Phuong. Hospitality, revenue management research, and education access. Ho Chi Minh City.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,500;12..96,700;12..96,800&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<script>document.documentElement.setAttribute('data-theme','light');</script>
 <style>
-  *,*::before,*::after { box-sizing: border-box; }
-  html { -webkit-text-size-adjust: 100%; }
-  body { margin: 0; }
-  img { max-width: 100%; }
-  [hidden] { display: none !important; }
-</style>
-<style>
-  /* Layout: a scroll story. Poster-scale hero, then sections that arrive as you reach them. */
-  :root {
-    --paper: #fcf9f8; --raise: #ffffff; --ink: #141010; --ink-2: #5b5250; --ink-3: #978d8b;
-    --rule: #e8e0dd; --accent: #b31b1b; --accent-soft: #fbeaea; --on-accent: #ffffff;
-    --glow: rgba(179,27,27,.10); --lift: rgba(179,27,27,.18);
+  :root, :root[data-theme="light"] {
+    --paper: #fffdfc; --raise: #ffffff; --sink: #faf6f4;
+    --ink: #1a1413; --ink-2: #635857; --ink-3: #9c9290;
+    --rule: #ece5e2; --accent: #b31b1b; --accent-soft: #fdf0f0; --on-accent: #ffffff;
+    --glow: rgba(179,27,27,.07); --lift: rgba(120,70,65,.13);
     --display: "Bricolage Grotesque", "Archivo", system-ui, sans-serif;
     --sans: "Archivo", system-ui, -apple-system, sans-serif;
     --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
-      --paper: #0c0a0a; --raise: #181414; --ink: #f5f2f1; --ink-2: #b3a8a6; --ink-3: #7d7372;
-      --rule: #2d2626; --accent: #ff6b63; --accent-soft: #2b1616; --on-accent: #1a0d0d;
-      --glow: rgba(255,107,99,.10); --lift: rgba(0,0,0,.55); color-scheme: dark;
+      --paper: #141010; --raise: #1e1818; --sink: #191313; --ink: #f7f4f3; --ink-2: #bcb1af; --ink-3: #867b7a;
+      --rule: #342c2c; --accent: #ff7a72; --accent-soft: #2e1818; --on-accent: #1a0d0d;
+      --glow: rgba(255,122,114,.09); --lift: rgba(0,0,0,.5); color-scheme: dark;
     }
   }
   :root[data-theme="dark"] {
-    --paper: #0c0a0a; --raise: #181414; --ink: #f5f2f1; --ink-2: #b3a8a6; --ink-3: #7d7372;
-    --rule: #2d2626; --accent: #ff6b63; --accent-soft: #2b1616; --on-accent: #1a0d0d;
-    --glow: rgba(255,107,99,.10); --lift: rgba(0,0,0,.55); color-scheme: dark;
+    --paper: #141010; --raise: #1e1818; --sink: #191313; --ink: #f7f4f3; --ink-2: #bcb1af; --ink-3: #867b7a;
+    --rule: #342c2c; --accent: #ff7a72; --accent-soft: #2e1818; --on-accent: #1a0d0d;
+    --glow: rgba(255,122,114,.09); --lift: rgba(0,0,0,.5); color-scheme: dark;
   }
 
-  body { background: var(--paper); color: var(--ink); font-family: var(--sans); font-size: 16px; line-height: 1.55; -webkit-font-smoothing: antialiased; }
-  body::after { content: ""; position: fixed; inset: 0 0 auto; height: 72vh; pointer-events: none; z-index: 0;
-    background: radial-gradient(68% 58% at 85% 0%, var(--glow), transparent 70%); }
-  .wrap { position: relative; z-index: 1; max-width: 1180px; margin: 0 auto;
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); font-size: 16px; line-height: 1.58; -webkit-font-smoothing: antialiased; }
+  body::after { content: ""; position: fixed; inset: 0 0 auto; height: 64vh; pointer-events: none; z-index: 0;
+    background: radial-gradient(64% 54% at 86% 0%, var(--glow), transparent 72%); }
+  .wrap { position: relative; z-index: 1; max-width: 1140px; margin: 0 auto;
     padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
-    padding-block: 44px 90px; }
+    padding-block: 48px 96px; }
   #bar { position: fixed; top: 0; left: 0; height: 3px; width: 0; background: var(--accent); z-index: 50; transition: width .08s linear; }
+  a { color: inherit; }
 
-  /* hero */
-  .hero { display: grid; grid-template-columns: 1.15fr .85fr; gap: 42px; align-items: center; }
+  .hero { display: grid; grid-template-columns: 1.15fr .85fr; gap: 46px; align-items: center; }
   .eyebrow { font-family: var(--mono); font-size: .72rem; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); margin: 0 0 16px; }
   h1 { font-family: var(--display); font-size: clamp(3.6rem, 11vw, 7.6rem); font-weight: 800; letter-spacing: -.04em; line-height: .86; margin: 0; text-wrap: balance; }
   h1 em { font-style: normal; color: var(--accent); }
-  .lede { font-size: clamp(1.05rem, 2.1vw, 1.32rem); line-height: 1.45; color: var(--ink-2); max-width: 34ch; margin: 24px 0 0; }
+  .lede { font-size: clamp(1.05rem, 2.1vw, 1.32rem); line-height: 1.45; color: var(--ink-2); max-width: 36ch; margin: 24px 0 0; }
   .lede b { color: var(--ink); font-weight: 600; }
   .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 9px; margin-top: 30px; }
-  .stat { background: var(--raise); border: 1px solid var(--rule); border-radius: 5px; padding: 13px 14px; transition: border-color .2s, transform .2s; }
+  .stat { background: var(--raise); border: 1px solid var(--rule); border-radius: 6px; padding: 13px 14px; transition: border-color .2s, transform .2s; }
   .stat:hover { border-color: var(--accent); transform: translateY(-2px); }
   .stat .n { font-family: var(--display); font-size: clamp(1.25rem, 3vw, 1.85rem); font-weight: 700; letter-spacing: -.03em; display: block; line-height: 1.1; font-variant-numeric: tabular-nums; }
   .stat .k { font-family: var(--mono); font-size: .62rem; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); margin-top: 4px; display: block; }
-  .poster { width: 100%; height: auto; display: block; border-radius: 6px; box-shadow: 0 18px 50px var(--lift); max-width: 100%; }
+  .poster { width: 100%; height: auto; display: block; border-radius: 7px; box-shadow: 0 18px 46px var(--lift); max-width: 100%; }
   .postercap { font-family: var(--mono); font-size: .64rem; color: var(--ink-3); margin: 10px 0 0; }
 
-  /* image band */
-  .band { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 44px; }
+  .band { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 46px; }
 
-  /* sections */
-  section { padding-block: 70px 0; }
+  section { padding-block: 76px 0; }
   h2 { font-family: var(--display); font-size: clamp(1.9rem, 4.6vw, 3rem); font-weight: 700; letter-spacing: -.035em; margin: 0; line-height: 1.04; }
   h2::after { content: ""; display: block; width: 48px; height: 4px; border-radius: 2px; background: var(--accent); margin-top: 14px; }
-  .sub { font-family: var(--mono); font-size: .7rem; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); margin: 14px 0 28px; }
+  .sub { font-family: var(--mono); font-size: .7rem; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); margin: 14px 0 30px; }
 
-  /* shared image styling */
-  .ph { width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 5px; aspect-ratio: 4/3; max-width: 100%;
+  .ph { width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 6px; aspect-ratio: 4/3; max-width: 100%;
     transition: transform .34s cubic-bezier(.2,.7,.3,1), box-shadow .34s ease; background: var(--accent-soft); }
-  .ph:hover { transform: translateY(-5px); box-shadow: 0 14px 34px var(--lift); }
+  .ph:hover { transform: translateY(-5px); box-shadow: 0 14px 32px var(--lift); }
   .ph.tall { aspect-ratio: 3/4; }
   .cap { font-family: var(--mono); font-size: .64rem; color: var(--ink-3); line-height: 1.5; }
 
-  /* research feature */
-  .feature { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: center; background: var(--raise); border: 1px solid var(--rule); border-radius: 8px; padding: 32px; }
-  .feature img { width: 100%; height: auto; display: block; border-radius: 5px; max-width: 100%; }
-  .feature .pt { font-family: var(--display); font-size: clamp(1.4rem, 3vw, 2.1rem); font-weight: 700; line-height: 1.12; letter-spacing: -.03em; margin: 0 0 16px; }
-  .feature p { margin: 0 0 12px; color: var(--ink-2); font-size: .95rem; }
-  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 16px; }
-  .tag { font-family: var(--mono); font-size: .66rem; color: var(--accent); background: var(--accent-soft); border-radius: 3px; padding: 4px 9px; transition: transform .18s ease; }
+  /* writing */
+  .papers { display: grid; gap: 14px; }
+  .paper { background: var(--raise); border: 1px solid var(--rule); border-radius: 9px; padding: 30px; display: grid; gap: 14px;
+    transition: border-color .2s, box-shadow .2s, transform .2s; }
+  .paper:hover { border-color: var(--accent); box-shadow: 0 12px 32px var(--lift); transform: translateY(-2px); }
+  .paper .kicker { font-family: var(--mono); font-size: .66rem; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  .score { font-family: var(--mono); font-size: .66rem; color: var(--ink-2); background: var(--sink); border: 1px solid var(--rule); border-radius: 999px; padding: 3px 10px; letter-spacing: .04em; text-transform: none; }
+  .paper .pt { font-family: var(--display); font-size: clamp(1.35rem, 3vw, 2rem); font-weight: 700; line-height: 1.14; letter-spacing: -.03em; margin: 0; }
+  .paper p { margin: 0; color: var(--ink-2); font-size: .95rem; max-width: 72ch; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .tag { font-family: var(--mono); font-size: .66rem; color: var(--accent); background: var(--accent-soft); border-radius: 4px; padding: 4px 9px; transition: transform .18s ease; }
   .tag:hover { transform: translateY(-2px); }
+  .pill { font-family: var(--sans); font-size: .8rem; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 7px;
+    color: var(--on-accent); background: var(--accent); border-radius: 999px; padding: 9px 17px; transition: transform .18s, filter .18s; }
+  .pill:hover { transform: translateY(-2px); filter: brightness(1.08); }
+  .pill.ghost { color: var(--ink); background: transparent; border: 1px solid var(--rule); }
+  .pill.ghost:hover { border-color: var(--accent); }
+  .pillrow { display: flex; flex-wrap: wrap; gap: 8px; }
 
-  /* honors */
   .honors { display: grid; grid-template-columns: repeat(auto-fit, minmax(235px, 1fr)); gap: 10px; }
-  .hon { background: var(--raise); border: 1px solid var(--rule); border-radius: 5px; padding: 18px; display: grid; gap: 5px; align-content: start; transition: transform .2s, border-color .2s, box-shadow .2s; }
-  .hon:hover { transform: translateY(-3px); border-color: var(--accent); box-shadow: 0 10px 26px var(--lift); }
+  .hon { background: var(--raise); border: 1px solid var(--rule); border-radius: 6px; padding: 18px; display: grid; gap: 5px; align-content: start; transition: transform .2s, border-color .2s, box-shadow .2s; }
+  .hon:hover { transform: translateY(-3px); border-color: var(--accent); box-shadow: 0 10px 24px var(--lift); }
   .hon .a { font-family: var(--display); font-weight: 700; font-size: 1.04rem; letter-spacing: -.02em; line-height: 1.22; }
   .hon .w { color: var(--ink-2); font-size: .85rem; }
   .hon .s { font-family: var(--mono); font-size: .78rem; color: var(--accent); font-variant-numeric: tabular-nums; }
+  a.hon { text-decoration: none; }
+  .hon .cert { width: 100%; aspect-ratio: 1.42/1; object-fit: cover; object-position: center top; display: block;
+    border-radius: 5px; border: 1px solid var(--rule); background: var(--sink); margin-bottom: 4px; }
+  .hon .view { font-family: var(--mono); font-size: .62rem; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); margin-top: 2px; }
+  a.hon:hover .view { color: var(--accent); }
 
-  /* filters */
   .filters { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 22px; }
   .filters button { font-family: var(--sans); font-size: .8rem; font-weight: 600; color: var(--ink-2); background: var(--raise); border: 1px solid var(--rule); border-radius: 999px; padding: 7px 15px; cursor: pointer; transition: color .14s, background .14s, border-color .14s, transform .14s; }
   .filters button:hover { color: var(--ink); border-color: var(--accent); transform: translateY(-1px); }
   .filters button[aria-pressed="true"] { color: var(--on-accent); background: var(--accent); border-color: var(--accent); }
   .filters button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
-  /* cards */
   .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 14px; }
-  .card { background: var(--raise); border: 1px solid var(--rule); border-radius: 8px; padding: 22px; display: grid; gap: 12px; align-content: start; min-width: 0;
+  .card { background: var(--raise); border: 1px solid var(--rule); border-radius: 9px; padding: 24px; display: grid; gap: 12px; align-content: start; min-width: 0;
     transition: transform .2s, border-color .2s, box-shadow .2s; }
-  .card:hover { transform: translateY(-3px); border-color: var(--accent); box-shadow: 0 12px 30px var(--lift); }
+  .card:hover { transform: translateY(-3px); border-color: var(--accent); box-shadow: 0 12px 28px var(--lift); }
   .card.wide { grid-column: 1 / -1; }
   .card[hidden] { display: none !important; }
   .when { font-family: var(--mono); font-size: .67rem; letter-spacing: .06em; color: var(--accent); font-variant-numeric: tabular-nums; }
   .card h3 { font-family: var(--display); font-size: 1.4rem; font-weight: 700; letter-spacing: -.03em; line-height: 1.14; margin: 0; }
   .card .who { font-size: .87rem; color: var(--ink-2); margin: -6px 0 0; }
   .card ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 8px; }
-  .card li { position: relative; padding-left: 15px; color: var(--ink-2); font-size: .9rem; line-height: 1.5; }
+  .card li { position: relative; padding-left: 15px; color: var(--ink-2); font-size: .9rem; line-height: 1.52; }
   .card li::before { content: ""; position: absolute; left: 0; top: .62em; width: 6px; height: 1.5px; background: var(--accent); border-radius: 2px; }
   .card li b { color: var(--ink); font-weight: 600; font-variant-numeric: tabular-nums; }
   .shots { display: grid; grid-template-columns: repeat(auto-fit, minmax(135px, 1fr)); gap: 8px; }
+  .linkrow { display: flex; flex-wrap: wrap; gap: 8px; }
+  .lnk { font-family: var(--mono); font-size: .68rem; text-decoration: none; color: var(--ink-2); background: var(--sink); border: 1px solid var(--rule); border-radius: 999px; padding: 5px 11px; transition: color .16s, border-color .16s, transform .16s; }
+  .lnk:hover { color: var(--accent); border-color: var(--accent); transform: translateY(-1px); }
 
-  /* closing */
-  .end { margin-top: 78px; background: var(--raise); border: 1px solid var(--rule); border-radius: 8px; padding: 34px; display: grid; gap: 18px; }
-  .end p { margin: 0; color: var(--ink-2); max-width: 54ch; }
+  .end { margin-top: 84px; background: var(--raise); border: 1px solid var(--rule); border-radius: 9px; padding: 36px; display: grid; gap: 18px; }
+  .end p { margin: 0; color: var(--ink-2); max-width: 56ch; }
   .mailrow { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
   .mail { font-family: var(--mono); font-size: .95rem; color: var(--ink); user-select: all; }
   .copy { font-family: var(--sans); font-size: .78rem; font-weight: 600; color: var(--on-accent); background: var(--accent); border: 0; border-radius: 999px; padding: 9px 17px; cursor: pointer; transition: transform .18s, filter .18s; }
   .copy:hover { transform: translateY(-2px); filter: brightness(1.08); }
   .copy:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
 
-  /* reveal on scroll: visible by default, JS opts in */
   .js .rv { opacity: 0; transform: translateY(26px); transition: opacity .7s ease, transform .7s cubic-bezier(.2,.7,.3,1); }
   .js .rv.in { opacity: 1; transform: none; }
   .js .rv.d1 { transition-delay: .07s } .js .rv.d2 { transition-delay: .14s } .js .rv.d3 { transition-delay: .21s }
 
   @media (max-width: 860px) {
     .hero { grid-template-columns: 1fr; gap: 30px; }
-    .feature { grid-template-columns: 1fr; padding: 22px; }
     .band { grid-template-columns: 1fr 1fr; }
     .band > :first-child { grid-column: 1 / -1; }
+    .paper { padding: 24px; }
   }
   @media (max-width: 520px) { .stats { grid-template-columns: 1fr 1fr; } }
   @media (prefers-reduced-motion: reduce) {
@@ -153,7 +155,7 @@
     <div class="rv">
       <p class="eyebrow">Ho Chi Minh City, Vietnam</p>
       <h1>Phuong <em>Cao</em></h1>
-      <p class="lede">Literature student at the <b>High School for the Gifted, VNU-HCM</b>. I work on hospitality pricing, and on getting school to the places it does not reach.</p>
+      <p class="lede">Literature student at the <b>High School for the Gifted, VNU-HCM</b>. Two summers on a hotel front desk in Binh Dinh turned into a paper about why small hotels are afraid to move their prices.</p>
       <div class="stats">
         <div class="stat"><span class="n">1580</span><span class="k">SAT</span></div>
         <div class="stat"><span class="n">9.6</span><span class="k">GPA / 10</span></div>
@@ -162,51 +164,105 @@
       </div>
     </div>
     <div class="rv d2">
-      <img class="poster" src="img/bongam.jpg" alt="Poster for Bong Am, the three-hour production staged by Drama Club PTNK.">
-      <p class="postercap">Bong Am. Three hours, one Sunday, 150 guests.</p>
+      <img class="poster" src="img/bongam.jpg" alt="Poster for Bong Am, the three-hour production staged by Dramatix PTNK.">
     </div>
   </header>
 
   <div class="band rv">
     <img class="ph" src="img/sageflags.jpg" alt="The team at the SAGE World Cup, standing in front of the flags of the competing countries.">
-    <img class="ph" src="img/whiteboard.jpg" alt="Phuong teaching at a whiteboard while children put their hands up.">
-    <img class="ph" src="img/tedx.jpg" alt="Drama Club members in costume at the TEDxYouth PTNK collaboration.">
+    <img class="ph" src="img/case.jpg" alt="Working through a case with teammates at a competition table.">
+    <img class="ph" src="img/tedx.jpg" alt="Dramatix members in costume at the TEDxYouth PTNK collaboration.">
   </div>
 
   <section>
-    <h2 class="rv">Honors</h2>
-    <p class="sub rv">All 2026</p>
-    <div class="honors">
-      <div class="hon rv"><span class="a">National Champion</span><span class="w">SAGE Vietnam</span></div>
-      <div class="hon rv d1"><span class="a">Gold Medalist, SDG 10</span><span class="w">SAGE Global</span></div>
-      <div class="hon rv d2"><span class="a">Highest Distinction, Silver Medalist Team</span><span class="w">World Economics Cup</span><span class="s">100 / 100</span></div>
-      <div class="hon rv d3"><span class="a">Gold Award, Best in School</span><span class="w">Senior Mathematical Challenge</span><span class="s">121 / 125</span></div>
-      <div class="hon rv"><span class="a">Global Silver, Distinction, Best in School</span><span class="w">Mathematical Olympiad for Girls</span><span class="s">45 / 50</span></div>
-      <div class="hon rv d1"><span class="a">Honor Award, top 5% globally</span><span class="w">Cambridge Economics &amp; Finance</span></div>
-      <div class="hon rv d2"><span class="a">Top 50 nationwide</span><span class="w">Vietnam Business Innovation Challenge</span></div>
-      <div class="hon rv d3"><span class="a">Top 10 cluster</span><span class="w">SEIA Spring, Hospitality &amp; Tourism case</span></div>
+    <h2 class="rv">Education</h2>
+    <p class="sub rv">2020 to 2027</p>
+    <div class="grid">
+      <article class="card rv">
+        <span class="when">2024 to 2027</span>
+        <h3>VNU-HCM High School for the Gifted</h3>
+        <p class="who">Literature specialization</p>
+        <ul>
+          <li>GPA 9.6/10 in Grade 10 and 9.6/10 in Grade 11.</li>
+          <li>Admission is by nationwide competitive examination in one specialized subject, which also sets the elective track for three years. In 2026, 4,539 candidates sat the common exams for 595 Grade 10 places.</li>
+        </ul>
+      </article>
+      <article class="card rv d1">
+        <span class="when">2020 to 2024</span>
+        <h3>Le Anh Xuan Secondary School</h3>
+        <p class="who">Ho Chi Minh City</p>
+        <ul><li>Grade 9 GPA 9.5/10.</li></ul>
+      </article>
     </div>
   </section>
 
   <section>
-    <h2 class="rv">Pricing Without Scale</h2>
-    <p class="sub rv">Independent research, 2026</p>
-    <div class="feature rv">
-      <div>
-        <p class="pt">Why do independent hotels hold their rates flat while chains move theirs daily?</p>
-        <p>I built a conceptual model combining Littlewood's two-class rule with dual entitlement and price fairness, estimating an illustrative 11.7% foregone yield under static pricing, then looked at why the gap survives.</p>
+    <h2 class="rv">Writing</h2>
+    <p class="sub rv">Research and competition essays</p>
+    <div class="papers">
+
+      <article class="paper rv">
+        <p class="kicker">Independent research &middot; 2026</p>
+        <h3 class="pt">Pricing Without Scale: Revenue Management Adoption and Foregone Yield among Independent Hospitality Enterprises in Emerging Markets</h3>
+        <p>Chains move their room rates daily. Independent hotels in Vietnam hold theirs flat for a whole season. I built a conceptual model combining Littlewood's two-class rule with dual entitlement and price fairness, estimating an illustrative <b>11.7%</b> foregone yield under static pricing, then asked why the gap survives.</p>
         <p>The answer was not technology. A chain that raises its rates looks like it is following policy. An independent doing the same looks like it is taking advantage. The paper closes with a scale-light revenue management architecture, built on rate fences and protection-level rules, for operators too small to run a full system.</p>
         <div class="tags">
-          <span class="tag">Littlewood's rule</span><span class="tag">protection levels</span><span class="tag">rate fences</span><span class="tag">dual entitlement</span><span class="tag">RevPAR</span>
+          <span class="tag">Littlewood's rule</span><span class="tag">protection levels</span><span class="tag">rate fences</span><span class="tag">dual entitlement</span><span class="tag">RevPAR</span><span class="tag">Savills Hotels &amp; GSO data</span>
         </div>
-      </div>
-      <img src="img/eduaccess.jpg" alt="The EduAccess device, a ruggedised tablet showing an offline maths lesson.">
+        <div class="pillrow">
+          <a class="pill" href="docs/pricing-without-scale.pdf" target="_blank" rel="noopener">Read the paper</a>
+        </div>
+      </article>
+
+      <article class="paper rv d1">
+        <p class="kicker">LSESU Economics essay competition &middot; 2026 <span class="score">82 / 100, provisional</span></p>
+        <h3 class="pt">Collateral, Not Surveillance: The Home Day as a Worker Discipline Device</h3>
+        <p>Written to a prompt set by Prof. Sir Christopher Pissarides. Firms treat the work-from-home day as something to be monitored. I argue the opposite: because workers value the day more than it costs the firm to provide, the day is the cheapest disciplinary instrument the firm owns, and surveillance spends down the very asset that makes it work.</p>
+        <p>The essay builds on Shapiro and Stiglitz on efficiency wages, Holmstrom and Milgrom on multitasking, and Falk and Kosfeld on control aversion, then sets out four design rules: ration and coordinate the day, contract on coarse outcomes, let peers monitor, and screen by self-selection.</p>
+        <div class="tags">
+          <span class="tag">efficiency wages</span><span class="tag">multitasking</span><span class="tag">control aversion</span><span class="tag">compensating differentials</span><span class="tag">team moral hazard</span>
+        </div>
+        <div class="pillrow">
+          <a class="pill" href="docs/collateral-not-surveillance.pdf" target="_blank" rel="noopener">Read the essay</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section>
+    <h2 class="rv">Honors</h2>
+    <p class="sub rv">2024 to 2026</p>
+    <div class="honors">
+      <a class="hon rv" href="certs/sage-vietnam.pdf" target="_blank" rel="noopener">
+        <img class="cert" src="certs/sage-vietnam.jpg" alt="SAGE Vietnam National Champion certificate, 2026.">
+        <span class="a">National Champion</span><span class="w">SAGE Vietnam, 2026</span><span class="view">View certificate</span></a>
+      <a class="hon rv d1" href="certs/sage-global.pdf" target="_blank" rel="noopener">
+        <img class="cert" src="certs/sage-global.jpg" alt="SAGE Global Gold Medal Award certificate for Sustainable Development Goal 10, SAGE World Cup 2026, Hanoi.">
+        <span class="a">Gold Medal, SDG 10 Reduced Inequalities</span><span class="w">SAGE Global, SAGE World Cup 2026</span><span class="view">View certificate</span></a>
+      <a class="hon rv d2" href="certs/wec.pdf" target="_blank" rel="noopener">
+        <img class="cert" src="certs/wec.jpg" alt="World Economics Cup Certificate of Achievement, Silver Team Award Vietnam, 2026.">
+        <span class="a">Highest Distinction and Silver Team Award</span><span class="w">World Economics Cup, 2026</span><span class="s">100 / 100</span><span class="view">View certificate</span></a>
+      <a class="hon rv d3" href="certs/smc.pdf" target="_blank" rel="noopener">
+        <img class="cert" src="certs/smc.jpg" alt="Senior Mathematical Challenge Gold Award certificate, 2026.">
+        <span class="a">Gold Award and Best in School</span><span class="w">Senior Mathematical Challenge, 2026</span><span class="s">121 / 125</span><span class="view">View certificate</span></a>
+      <a class="hon rv" href="certs/mog.pdf" target="_blank" rel="noopener">
+        <img class="cert" src="certs/mog.jpg" alt="Mathematical Olympiad for Girls certificate, Distinction, 2026.">
+        <span class="a">Global Silver Medal, Distinction, Best in School</span><span class="w">Mathematical Olympiad for Girls, 2026</span><span class="s">45 / 50</span><span class="view">View certificate</span></a>
+      <a class="hon rv d1" href="certs/cefc.pdf" target="_blank" rel="noopener">
+        <img class="cert" src="certs/cefc.jpg" alt="Cambridge Economics and Finance Competition Honor Award certificate, 2026.">
+        <span class="a">Honor Award, top 5% globally</span><span class="w">Cambridge Economics &amp; Finance Competition, 2026</span><span class="view">View certificate</span></a>
+      <a class="hon rv d2" href="certs/vbic.pdf" target="_blank" rel="noopener">
+        <img class="cert" src="certs/vbic.jpg" alt="Vietnam Business Innovation Challenge certificate, 2026.">
+        <span class="a">Top 50 nationwide</span><span class="w">Vietnam Business Innovation Challenge, 2026</span><span class="view">View certificate</span></a>
+      <div class="hon rv d3"><span class="a">Top 10 cluster</span><span class="w">SEIA Spring, Hospitality &amp; Tourism case, 2026</span></div>
+      <div class="hon rv"><span class="a">Top 10 Entrance Exam Scorer</span><span class="w">Literature Track, VNU-HCM High School for the Gifted, 2024</span></div>
     </div>
   </section>
 
   <section>
     <h2 class="rv">What I do</h2>
-    <p class="sub rv"><span id="shown">11</span> of 11 showing</p>
+    <p class="sub rv"><span id="shown">12</span> of 12 showing</p>
 
     <div class="filters rv" role="group" aria-label="Filter by area">
       <button type="button" data-f="all" aria-pressed="true">All</button>
@@ -219,23 +275,79 @@
 
     <div class="grid" id="list">
 
-      <article class="card wide rv" data-tags="creative campus">
-        <span class="when">Sep 2024 to Oct 2026</span>
-        <h3>Drama Club PTNK</h3>
-        <p class="who">Vice President, later Advisor</p>
+      <article class="card rv" data-tags="hospitality">
+        <span class="when">Jul 2025 to Aug 2025, Jun 2026 to Jul 2026</span>
+        <h3>Century Palace</h3>
+        <p class="who">Hospitality Operations Intern</p>
         <ul>
-          <li>Co-led <b>50+</b> members across scriptwriting, acting, media and staging, and ran logistics and scheduling.</li>
-          <li>Secured <b>16,000,000 VND</b> in corporate sponsorship; the club generated <b>14,000,000 VND</b> in ticket and F&amp;B revenue to cover the production budget.</li>
-          <li>Ran live stage operations through a continuous three-hour production for <b>150+</b> attendees.</li>
-          <li>Produced holiday short films that passed <b>636,000</b> views across platforms.</li>
+          <li>Two summer rotations across Front Office and Food &amp; Beverage at a <b>4-star</b> hotel, working the daily operations of a commercial property.</li>
+          <li>Handled guest inquiries and resolved on-site issues during peak check-in, holding service standards in a fast-paced environment.</li>
+          <li>Analysed <b>125+</b> pieces of guest feedback against departmental workflows, identified service bottlenecks and raised practical improvements with management.</li>
+          <li>Century Palace is an independent property of <b>20</b> rooms in five categories in An Nhon, Binh Dinh, with published rates from <b>450,000</b> to <b>1,390,000 VND</b> a night. The research paper above grew out of questions I asked here about how those rates were set.</li>
+        </ul>
+        <div class="linkrow"><a class="lnk" href="https://centurypalace.group/" target="_blank" rel="noopener">centurypalace.group</a></div>
+      </article>
+
+      <article class="card rv d1" data-tags="hospitality business">
+        <span class="when">Mar 2026 to Aug 2026</span>
+        <h3>Independent research</h3>
+        <p class="who">Author and Lead Researcher</p>
+        <ul>
+          <li>Wrote <i>Pricing Without Scale</i>, constructing a conceptual revenue-management model illustrating an <b>11.7%</b> potential yield gap under assumed pricing scenarios.</li>
+          <li>Synthesised macro-level hospitality indicators from Savills Hotels and the General Statistics Office to analyse the structural, technological and behavioural barriers to dynamic yield adoption.</li>
+          <li>Developed a revenue management framework using rate fences and protection-level rules to improve pricing efficiency while maintaining guest trust.</li>
+        </ul>
+        <div class="linkrow"><a class="lnk" href="docs/pricing-without-scale.pdf" target="_blank" rel="noopener">Full paper (PDF)</a></div>
+      </article>
+
+      <article class="card rv d2" data-tags="education business">
+        <span class="when">Jul 2025 to Oct 2026</span>
+        <h3>Equilibria</h3>
+        <p class="who">Founder and Content Lead</p>
+        <ul>
+          <li>Established and led a platform providing open access to educational content applying commercial economics concepts to the hospitality and service sectors.</li>
+          <li>Researched and curated digital learning tools to bridge information gaps and simplify operational metrics for students exploring service industries.</li>
+          <li>Managed the content team and partnered with <b>5</b> school organisations, reaching over <b>1,000</b> students.</li>
+        </ul>
+        <div class="linkrow"><a class="lnk" href="https://equilibria.page/" target="_blank" rel="noopener">equilibria.page</a></div>
+      </article>
+
+      <article class="card wide rv" data-tags="education business">
+        <span class="when">Jan 2026 to Aug 2026</span>
+        <h3>EduAccess, SAGE</h3>
+        <p class="who">Chief Marketing Officer and Chief Business Officer</p>
+        <ul>
+          <li>Co-developed an offline learning device built to improve access to education for children in mountainous communities without reliable internet.</li>
+          <li>Owned the venture's financial planning and marketing: pricing, cost structure and positioning for national and international competition.</li>
+          <li>Took the venture to <b>National Champion</b> at SAGE Vietnam and a <b>Gold Medal for SDG 10</b>, Reduced Inequalities, at SAGE Global.</li>
         </ul>
         <div class="shots">
-          <img class="ph tall" src="img/thang4.jpg" alt="Poster for Mua thang tu xa vong, a Drama Club production.">
+          <img class="ph" src="img/eduaccess.jpg" alt="The EduAccess device, a ruggedised tablet showing an offline maths lesson.">
+          <img class="ph" src="img/sageaward.jpg" alt="The team on stage at the SAGE 2026 Cup.">
+          <img class="ph" src="img/sageflags.jpg" alt="The team in front of the competing countries' flags.">
+          <img class="ph" src="img/sagegroup.jpg" alt="Competitors gathered at the SAGE World Cup.">
+        </div>
+      </article>
+
+      <article class="card wide rv" data-tags="creative campus">
+        <span class="when">Sep 2024 to Oct 2026</span>
+        <h3>Dramatix PTNK</h3>
+        <p class="who">Vice President, later Advisor</p>
+        <ul>
+          <li>Co-led a team of over <b>50</b> members across scriptwriting, acting, media and staging, and managed the logistics and scheduling of productions and events.</li>
+          <li>Secured corporate sponsorships worth <b>16,000,000 VND</b> and generated <b>14,000,000 VND</b> from ticket, food and beverage sales to cover the production budget.</li>
+          <li>Managed operations for <i>Bong Am</i>, a three-hour psychological mystery inspired by Luu Quang Vu's <i>Hon Truong Ba, da hang thit</i>, coordinating scene transitions and resolving technical and prop crises for <b>150+</b> attendees.</li>
+          <li>Collaborated with TEDxYouth@PTNK to stage <i>Witch Hunt</i>, a satirical adaptation of Snow White exploring cancel culture, for an audience of <b>200+</b>.</li>
+          <li>Produced short films for Christmas, March 8th and April 30th, resulting in over <b>1 million</b> views across Facebook and TikTok.</li>
+        </ul>
+        <div class="shots">
+          <img class="ph tall" src="img/thang4.jpg" alt="Poster for Mua thang tu xa vong, a Dramatix production.">
           <img class="ph" src="img/vietnam.jpg" alt="Cast in costume for Kham pha Viet Nam.">
           <img class="ph" src="img/camp.jpg" alt="The club on stage at the school traditional camp.">
           <img class="ph tall" src="img/backstage.jpg" alt="Two club members backstage before a show.">
+          <img class="ph" src="img/bonding.jpg" alt="The club together in a classroom.">
         </div>
-        <p class="cap">Productions, short films and the club's collaboration with TEDxYouth PTNK.</p>
+        <div class="linkrow"><a class="lnk" href="https://www.facebook.com/dramatixptnk" target="_blank" rel="noopener">Dramatix PTNK on Facebook</a></div>
       </article>
 
       <article class="card wide rv" data-tags="education">
@@ -243,56 +355,19 @@
         <h3>SUGAR Vietnam, The Route To Knowledge</h3>
         <p class="who">Khan Academy Vietnam Core Team, Academic Organizing Committee, Volunteer Teacher</p>
         <ul>
-          <li><b>128+</b> hours of direct instruction at two hours a week, writing and delivering lesson plans for students in shelter homes and remote areas.</li>
-          <li>Worked with Khan Academy Vietnam developers to bring digital material into local curricula, using progress-tracking tools for blended lessons.</li>
-          <li>Organised a fundraising workshop raising <b>25,000,000 VND</b> for scholarships and supplies.</li>
-          <li>Led fundraising and logistics for a charity trip to orphanages in Vung Tau.</li>
+          <li>Partnered directly with Khan Academy Vietnam developers as a Core Team member to integrate digital learning platforms into local curricula, using automated progress-tracking tools to run blended lessons.</li>
+          <li>Completed <b>128+</b> hours of direct instruction at two hours a week, delivering adaptive tutoring and tailored lesson plans for students in shelter homes and remote areas.</li>
+          <li>Behind each teaching hour sits a further <b>6</b> hours a week of online meetings, lesson planning and programme design.</li>
+          <li>Led a fundraising workshop at an Innovation &amp; Entrepreneurship Centre raising <b>25,000,000 VND</b> for scholarships and essential supplies.</li>
+          <li>Led fundraising for supplies and organised a charity trip to orphanages in Vung Tau, managing logistics and volunteer coordination.</li>
         </ul>
         <div class="shots">
           <img class="ph" src="img/teaching.jpg" alt="Working through an English textbook with a student.">
           <img class="ph" src="img/session.jpg" alt="A session in progress, worksheets and a laptop on the table.">
-          <img class="ph" src="img/volunteers.jpg" alt="The volunteer team after a session.">
           <img class="ph" src="img/worktable.jpg" alt="Students working around a table.">
+          <img class="ph" src="img/team.jpg" alt="The SUGAR volunteer team at the shelter after a session.">
         </div>
-        <p class="cap">Two hours a week, same room, since September 2024.</p>
-      </article>
-
-      <article class="card wide rv" data-tags="education business">
-        <span class="when">Jan to Aug 2026</span>
-        <h3>EduAccess, SAGE</h3>
-        <p class="who">Chief Marketing Officer and Chief Business Officer</p>
-        <ul>
-          <li>Co-developed an offline learning device for children in mountainous communities without reliable internet.</li>
-          <li>Owned financial planning and marketing: pricing, cost structure and positioning for national and international competition.</li>
-          <li>Team took <b>National Champion</b> at SAGE Vietnam and an <b>SDG 10 Gold Medal</b> at SAGE Global.</li>
-        </ul>
-        <div class="shots">
-          <img class="ph" src="img/sageaward.jpg" alt="The team on stage at the SAGE 2026 Cup.">
-          <img class="ph" src="img/sageflags.jpg" alt="The team in front of the competing countries' flags.">
-          <img class="ph" src="img/sagegroup.jpg" alt="Competitors gathered at the SAGE World Cup.">
-        </div>
-      </article>
-
-      <article class="card rv" data-tags="hospitality">
-        <span class="when">Summer 2026</span>
-        <h3>Century Palace</h3>
-        <p class="who">Hospitality Operations Intern, Quy Nhon</p>
-        <ul>
-          <li>Rotations across Front Office and Food &amp; Beverage at a <b>4-star</b> hotel, working the daily operations floor.</li>
-          <li>Handled guest inquiries and resolved on-site issues during peak check-in.</li>
-          <li>Analysed <b>125+</b> pieces of guest feedback against departmental workflows and raised service bottlenecks with management.</li>
-        </ul>
-      </article>
-
-      <article class="card rv d1" data-tags="hospitality business">
-        <span class="when">Mar to Aug 2026</span>
-        <h3>Independent research</h3>
-        <p class="who">Author and Lead Researcher</p>
-        <ul>
-          <li>Wrote <i>Pricing Without Scale</i>, modelling an illustrative <b>11.7%</b> foregone yield under static pricing.</li>
-          <li>Synthesised macro-level hospitality indicators from Savills Hotels and the General Statistics Office.</li>
-          <li>Developed a revenue management framework using rate fences and protection-level rules.</li>
-        </ul>
+        <div class="linkrow"><a class="lnk" href="https://www.facebook.com/sugarvn.ddtt/" target="_blank" rel="noopener">SUGAR Vietnam on Facebook</a></div>
       </article>
 
       <article class="card wide rv" data-tags="business campus">
@@ -300,10 +375,11 @@
         <h3>Shark Club, PTNK Economics Club</h3>
         <p class="who">Head of HR and Administration Logistics, later Advisor</p>
         <ul>
-          <li>Ran logistics, venue management and delivery for the <i>Monopreneur</i> workshop and the <i>Show Me How!</i> case event, each with <b>100+</b> participants city-wide.</li>
-          <li>Led a three-stage recruitment process, onboarding and performance evaluation for a <b>50</b>-member club.</li>
-          <li>Built the KPI framework used to track member engagement across departments.</li>
+          <li>Ran end-to-end logistics, venue management and execution for flagship academic programmes, including the <i>Monopreneur</i> workshop and the <i>Show Me How!</i> business case event, each attracting <b>100+</b> participants city-wide.</li>
+          <li>Led a three-stage recruitment process, onboarding and performance evaluation for a <b>50</b>-member economics club.</li>
+          <li>Designed and implemented structured KPI frameworks to track member engagement and optimise cross-functional workflow.</li>
         </ul>
+        <div class="linkrow"><a class="lnk" href="https://www.facebook.com/sharkclubptnk/" target="_blank" rel="noopener">Shark Club on Facebook</a></div>
         <div class="shots">
           <img class="ph" src="img/monopreneur.jpg" alt="Participants gathered at the Monopreneur workshop.">
           <img class="ph" src="img/forum.jpg" alt="A full auditorium during a Shark Club programme.">
@@ -311,111 +387,105 @@
         </div>
       </article>
 
+      <article class="card rv" data-tags="business hospitality">
+        <span class="when">2026</span>
+        <h3>Case competitions</h3>
+        <p class="who">Economics, finance and hospitality case rounds</p>
+        <ul>
+          <li><b>SEIA Spring</b>, Hospitality and Tourism cluster, top 10.</li>
+          <li><b>Vietnam Business Innovation Challenge</b>, top 50 nationwide.</li>
+          <li><b>World Economics Cup</b>, highest distinction at 100 / 100 and a silver medalist team.</li>
+          <li><b>Cambridge Economics &amp; Finance Competition</b>, Honor Award in the top 5% globally.</li>
+        </ul>
+        <div class="shots">
+          <img class="ph" src="img/cards.jpg" alt="Holding up worked case cards.">
+          <img class="ph" src="img/pair.jpg" alt="With a teammate in competition dress between rounds.">
+        </div>
+      </article>
+
       <article class="card wide rv" data-tags="education creative">
         <span class="when">Dec 2024 to May 2025</span>
         <h3>Se Project</h3>
-        <p class="who">Head of Arts Department and Sales Coordinator, Mekong Delta</p>
+        <p class="who">Head of Arts Department, Baker and Sales Coordinator</p>
         <ul>
-          <li>Taught fine arts to underprivileged children on outreach field trips to the Mekong Delta.</li>
-          <li>Led visual branding and a bake sale campaign raising <b>15,000,000 VND</b> for community activities.</li>
+          <li>Managed visual branding and hand-crafted baking production for community fundraisers, with raw material cost controls to maximise profit margins.</li>
+          <li>Ran confectionery sales campaigns and institutional outreach in underserved communities across the Mekong Delta region.</li>
+          <li>Coordinated bake sales generating a charitable fundraising pool of <b>15,000,000 VND</b> for regional children's welfare initiatives.</li>
         </ul>
         <div class="shots">
           <img class="ph tall" src="img/paint.jpg" alt="A child painting leaves onto a canvas during an arts session.">
           <img class="ph" src="img/artwall.jpg" alt="Children's finished paintings pinned across a classroom wall.">
           <img class="ph" src="img/bake.jpg" alt="Branding artwork for the bake sale, showing matcha, su kem and cookies.">
         </div>
-        <p class="cap">Left: a session in the Delta. Right: the bake sale artwork I designed.</p>
+        <div class="linkrow"><a class="lnk" href="https://www.facebook.com/seprojectptnk/" target="_blank" rel="noopener">Se Project on Facebook</a></div>
       </article>
 
-      <article class="card rv" data-tags="business">
-        <span class="when">2026</span>
-        <h3>Case competitions</h3>
-        <p class="who">Business and hospitality case rounds</p>
-        <ul>
-          <li>Competed across economics, finance and hospitality cases, including the <b>World Economics Cup</b>, <b>Cambridge Economics &amp; Finance</b>, <b>VBIC</b> and <b>SEIA Spring</b>.</li>
-        </ul>
-        <div class="shots">
-          <img class="ph" src="img/case.jpg" alt="In discussion with a teammate at a case competition table.">
-          <img class="ph" src="img/cards.jpg" alt="Holding up worked case cards.">
-        </div>
-      </article>
-
-      <article class="card rv d1" data-tags="education business">
-        <span class="when">Jul 2025 to Oct 2026</span>
-        <h3>Equilibria</h3>
-        <p class="who">Founder and Content Lead</p>
-        <ul>
-          <li>Founded an open-access platform publishing economics, finance and supply chain content.</li>
-          <li>Adapted the material for students entering the hospitality and tourism industries.</li>
-          <li>Managed the content team and partnered with <b>5</b> school organisations, reaching over <b>1,000</b> students.</li>
-        </ul>
-      </article>
-
-      <article class="card rv d2" data-tags="campus">
+      <article class="card wide rv" data-tags="campus">
         <span class="when">Jun 2025 to Aug 2026</span>
         <h3>PTNK Astronomy Club</h3>
         <p class="who">Head of Human Resources and Administration Logistics</p>
         <ul>
-          <li>Directed venue management, procurement and logistics for the flagship <i>HELIOS</i> workshop, with nearly <b>100</b> participants.</li>
-          <li>Managed recruitment, onboarding and internal logistics.</li>
+          <li>Directed venue management, resource procurement and administration logistics for the flagship <i>HELIOS</i> Solar System workshop, attracting nearly <b>100</b> participants.</li>
+          <li>Managed recruitment, onboarding and internal logistics to maintain cross-functional workflow and organisational cohesion.</li>
+          <li>HELIOS ran on 25 June 2026 and combined a lecture on the solar system with a portable planetarium, telescope observation and an Arduino build session.</li>
         </ul>
+        <div class="shots">
+          <img class="ph" src="img/astro-helios.jpg" alt="A club member opening the HELIOS solar system lecture at PTNK, 25 June 2026.">
+          <img class="ph" src="img/astro-dome.jpg" alt="Participants gathered around the portable planetarium projector during HELIOS.">
+          <img class="ph" src="img/astro-telescope.jpg" alt="A participant at the telescope during the observation session.">
+          <img class="ph" src="img/astro-arduino.jpg" alt="An Arduino build station with handbooks and wiring laid out for the workshop.">
+        </div>
+        <div class="linkrow"><a class="lnk" href="https://www.facebook.com/ptnkastronomyclub/" target="_blank" rel="noopener">PTNK Astronomy Club on Facebook</a></div>
       </article>
 
-      <article class="card rv" data-tags="campus">
+      <article class="card wide rv" data-tags="campus business">
         <span class="when">Jun 2025 to Aug 2026</span>
         <h3>PTNK Foosball Club</h3>
         <p class="who">Head of Finance and External Relations, later Advisor</p>
         <ul>
-          <li>Led corporate outreach and partner relations, securing <b>10,000,000 VND</b> in sponsorship.</li>
-          <li>Ran logistics for <b>2</b> seasonal championship tournaments with <b>100+</b> cumulative players.</li>
+          <li>Led corporate outreach strategies and partner relations, securing <b>10,000,000 VND</b> in financial sponsorship.</li>
+          <li>Executed logistics for <b>2</b> seasonal championship tournaments engaging <b>100+</b> cumulative players, and established foosball as a daily recreational fixture on campus.</li>
         </ul>
+        <div class="shots">
+          <img class="ph" src="img/foos-sponsor.jpg" alt="Two players at the table during a sponsored club tournament.">
+          <img class="ph" src="img/foos-crowd.jpg" alt="Students gathered around the table between matches.">
+          <img class="ph" src="img/foos-match.jpg" alt="A match in progress in the school courtyard.">
+          <img class="ph" src="img/foos-table.jpg" alt="Close-up of the table during play.">
+        </div>
+        <div class="linkrow"><a class="lnk" href="https://www.facebook.com/ptnkfoosballclub24" target="_blank" rel="noopener">PTNK Foosball Club on Facebook</a></div>
       </article>
 
-      <article class="card rv d1" data-tags="education">
+      <article class="card wide rv" data-tags="education">
         <span class="when">Jun 2025 to Aug 2026</span>
         <h3>Elvia Project</h3>
         <p class="who">Vice Head of Public Relations</p>
         <ul>
-          <li>Co-led PR and external relations for environmental initiatives, including the <i>Canh Xanh</i> workshop.</li>
-          <li>Coordinated <b>3</b> outreach visits to shelters and a Children's Hospital, and helped distribute nearly <b>200</b> care packages.</li>
+          <li>Co-led PR campaigns and external relations for environmental initiatives and community workshops, including the <i>Canh Xanh</i> workshop.</li>
+          <li>Coordinated <b>3</b> outreach visits to local shelters and to Children's Hospital 1 in Ho Chi Minh City, organised fundraising campaigns and helped distribute nearly <b>200</b> care packages.</li>
         </ul>
+        <div class="shots">
+          <img class="ph" src="img/elvia-packages.jpg" alt="Care packages laid out and filled before a hospital visit.">
+          <img class="ph" src="img/elvia-hospital.jpg" alt="The team with the packages at Children's Hospital 1 in Ho Chi Minh City.">
+          <img class="ph" src="img/elvia-visit.jpg" alt="The team with residents during a shelter visit.">
+        </div>
+        <div class="linkrow"><a class="lnk" href="https://www.facebook.com/elviaproject/" target="_blank" rel="noopener">Elvia Project on Facebook</a></div>
       </article>
 
     </div>
   </section>
 
-  <section>
-    <h2 class="rv">Education</h2>
-    <p class="sub rv">2020 to 2027</p>
-    <div class="grid">
-      <article class="card rv">
-        <span class="when">2024 to 2027</span>
-        <h3>High School for the Gifted, VNU-HCM</h3>
-        <p class="who">Literature specialization</p>
-        <ul><li>GPA <b>9.6</b>/10 in Grade 10 and <b>9.6</b>/10 in Grade 11. Admission is by competitive examination in one specialized subject, which also sets the elective track for three years.</li></ul>
-      </article>
-      <article class="card rv d1">
-        <span class="when">2020 to 2024</span>
-        <h3>Le Anh Xuan Secondary School</h3>
-        <p class="who">Ho Chi Minh City</p>
-        <ul><li>Grade 9 GPA <b>9.5</b>/10.</li></ul>
-      </article>
-    </div>
-  </section>
 
   <section>
     <h2 class="rv">Tools and interests</h2>
-    <p class="sub rv">Outside the list above</p>
     <div class="tags rv" style="gap:7px">
       <span class="tag">Google Workspace</span><span class="tag">Adobe Illustrator</span><span class="tag">Canva</span>
       <span class="tag">Vietnamese, native</span><span class="tag">English, IELTS 7.5</span>
-      <span class="tag">Behavioral economics</span><span class="tag">Guest experience design</span><span class="tag">Sustainable tourism</span><span class="tag">EdTech</span>
+      <span class="tag">Behavioral economics</span><span class="tag">Guest experience design</span><span class="tag">Sustainable tourism</span><span class="tag">EdTech integration</span>
       <span class="tag">Stagecraft</span><span class="tag">Piano</span><span class="tag">Illustration</span>
     </div>
   </section>
 
   <div class="end rv">
-    <p>Applying to study hospitality business in the United States. Happy to talk about revenue management, service operations, or getting learning material to places the internet does not reach.</p>
     <div class="mailrow">
       <span class="mail" id="mail">nguyenduyphuongcao@gmail.com</span>
       <button class="copy" type="button" id="copy">Copy</button>
