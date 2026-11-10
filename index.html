@@ -117,6 +117,7 @@
   .card li::before { content: ""; position: absolute; left: 0; top: .62em; width: 6px; height: 1.5px; background: var(--accent); border-radius: 2px; }
   .card li b { color: var(--ink); font-weight: 600; font-variant-numeric: tabular-nums; }
   .shots { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 8px; }
+  .shots.duo { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 740px; }
   .linkrow { display: flex; flex-wrap: wrap; gap: 8px; }
   .lnk { font-family: var(--mono); font-size: .68rem; text-decoration: none; color: var(--ink-2); background: var(--sink); border: 1px solid var(--rule); border-radius: 999px; padding: 5px 11px; transition: color .16s, border-color .16s, transform .16s; }
   .lnk:hover { color: var(--accent); border-color: var(--accent); transform: translateY(-1px); }
@@ -388,7 +389,7 @@
         </div>
       </article>
 
-      <article class="card rv" data-tags="business hospitality">
+      <article class="card wide rv" data-tags="business hospitality">
         <span class="when">2026</span>
         <h3>Case competitions</h3>
         <p class="who">Economics, finance and hospitality case rounds</p>
@@ -398,7 +399,7 @@
           <li><b>World Economics Cup</b>, highest distinction at 100 / 100 and a silver medalist team.</li>
           <li><b>Cambridge Economics &amp; Finance Competition</b>, Honor Award in the top 5% globally.</li>
         </ul>
-        <div class="shots">
+        <div class="shots duo">
           <img class="ph" src="img/cards.jpg" alt="Holding up worked case cards.">
           <img class="ph" src="img/pair.jpg" alt="With a teammate in competition dress between rounds.">
         </div>
